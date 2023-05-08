@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "114977160998",
+    "project_id": "flutter-full-news-6c99d",
+    "storage_bucket": "flutter-full-news-6c99d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114977160998:android:3f8c8b426463439c27cbe7",
+        "android_client_info": {
+          "package_name": "com.example.flutter_firebase_news_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114977160998-nk7qtidofif6gujpae63ihp3i06cvo6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAfQWzn14V0gFIAgj7e897NH_cUkgYCHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114977160998-nk7qtidofif6gujpae63ihp3i06cvo6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
