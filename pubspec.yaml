@@ -45,6 +45,9 @@ dependencies:
   cloud_firestore: ^4.6.0
   firebase_core: ^2.11.0
 
+  #Utility
+  animated_text_kit: ^4.2.2
+
 
 dev_dependencies:
   flutter_test:
