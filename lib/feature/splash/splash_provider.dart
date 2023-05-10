@@ -13,7 +13,7 @@ class SplashProvider extends StateNotifier<SplashState> {
   Future<void> checkApplicationVersion(String clientVersion) async {
     final databaseValue = await getVersionNumberFromDatabase();
     if (databaseValue == null || databaseValue.isEmpty) {
-      state = state.copyWith(isRequiredForceUpdate: true);
+      state = state.copyWith(isRedirectHome: false);
       return;
     }
 

@@ -28,6 +28,7 @@ class _SplashViewState extends ConsumerState<SplashView> with _SplashViewListenM
 
   @override
   Widget build(BuildContext context) {
+    listenAndNavigate(splashProvider);
     return Scaffold(
       backgroundColor: ColorsConstants.purpleDark,
       body: Center(

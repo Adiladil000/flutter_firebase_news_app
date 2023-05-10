@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_firebase_news_app/feature/splash/splash_view.dart';
+import 'package:flutter_firebase_news_app/feature/auth/authentication_view.dart';
 import 'package:flutter_firebase_news_app/product/constants/string_contants.dart';
+import 'package:flutter_firebase_news_app/product/initialize/app_theme.dart';
 import 'package:flutter_firebase_news_app/product/initialize/application_start.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:kartal/kartal.dart';
 
 void main() async {
   await ApplicationStart.init();
@@ -14,9 +16,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: StringContants.appName,
-      home: SplashView(),
+      home: const AuthenticationView(),
+      theme: AppTheme(context).theme,
     );
   }
 }
