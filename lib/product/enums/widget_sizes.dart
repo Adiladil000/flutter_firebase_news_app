@@ -1,5 +1,6 @@
 enum WidgetSize {
-  buttonNomal(56);
+  buttonNomal(56),
+  iconNormal(30);
 
   final int value;
 

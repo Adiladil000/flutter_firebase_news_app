@@ -7,6 +7,10 @@ import 'package:flutter_firebase_news_app/product/constants/string_contants.dart
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:kartal/kartal.dart';
 
+import 'package:flutter_firebase_news_app/product/widgets/text/title_text.dart';
+
+import 'package:flutter_firebase_news_app/product/widgets/text/sub_title_text.dart';
+
 class AuthenticationView extends ConsumerStatefulWidget {
   const AuthenticationView({super.key});
 
@@ -81,17 +85,13 @@ class _Header extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          StringContants.loginWelcomeBack,
-          style: context.textTheme.headlineSmall?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
+        const TitleText(
+          value: StringContants.loginWelcomeBack,
         ),
         Padding(
           padding: context.onlyTopPaddingLow,
-          child: Text(
-            StringContants.loginWelcomeDetail,
-            style: context.textTheme.titleMedium,
+          child: const SubTitleText(
+            value: StringContants.loginWelcomeDetail,
           ),
         ),
       ],

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_firebase_news_app/feature/auth/authentication_view.dart';
+import 'package:flutter_firebase_news_app/feature/home/home_view.dart';
 import 'package:flutter_firebase_news_app/product/constants/string_contants.dart';
 import 'package:flutter_firebase_news_app/product/initialize/app_theme.dart';
 import 'package:flutter_firebase_news_app/product/initialize/application_start.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:kartal/kartal.dart';
 
 void main() async {
   await ApplicationStart.init();
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: StringContants.appName,
-      home: const AuthenticationView(),
+      home: const HomeView(),
       theme: AppTheme(context).theme,
     );
   }
