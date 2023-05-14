@@ -17,7 +17,7 @@ class CategoryModel extends Equatable with IdModel, BaseFirebaseModel<CategoryMo
   final String? id;
 
   @override
-  List<Object?> get props => [detail, name, id];
+  List<Object?> get props => [id];
 
   CategoryModel copyWith({
     String? detail,
@@ -40,6 +40,7 @@ class CategoryModel extends Equatable with IdModel, BaseFirebaseModel<CategoryMo
     return CategoryModel(
       detail: json['detail'] as String?,
       name: json['name'] as String?,
+      id: json['id'] as String,
     );
   }
 }

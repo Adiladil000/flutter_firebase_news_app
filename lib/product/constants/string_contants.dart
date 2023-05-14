@@ -16,4 +16,10 @@ class StringContants {
   static const homeTitle = 'Recommended for you';
   static const homeSeeAll = 'See all';
   static const homeSearchHint = 'Search';
+  static const addItemTitle = 'Add new item';
+
+  // Component
+  static const String dropDownHint = 'Select Items';
+  static const String dropDownTitle = 'Title';
+  static const String buttonSave = 'Save';
 }

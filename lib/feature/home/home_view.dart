@@ -51,8 +51,14 @@ class _HomeViewState extends ConsumerState<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          context.navigateToPage(const HomeCreateView(), type: SlideType.BOTTOM);
+        onPressed: () async {
+          final response = await context.navigateToPage<bool?>(
+            const HomeCreateView(),
+            type: SlideType.BOTTOM,
+          );
+          if (response ?? false) {
+            await ref.read(_homeProvider.notifier).fetchAndLoad();
+          }
         },
         child: const Icon(Icons.add),
       ),
